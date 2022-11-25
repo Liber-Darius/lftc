@@ -1,0 +1,12 @@
+start ( ) :
+int : a , b , element , min , max , divisor, nrdivisors ;
+if a > b then { max = a ; min = b ; } else { max = b ; min = a ; }
+for element in_range ( min , max ) do
+{
+nrdivisors = 0 ;
+for divisor in_range ( 1 , element ) do
+{
+if element % divisor == 0 then { nrdivisors = nrdivisors + 1 ; }
+}
+if nrdivisors == 2 then { print ( element ) }
+}
